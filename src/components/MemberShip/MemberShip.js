@@ -1,12 +1,11 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
-import React from "react";
 import Icon from "../GlobalComponents/Icon";
 import MemberShipCard from "./MemberShipCard";
 import Container from "../GlobalComponents/Container";
-import TrainerOneBg from "../Image/trainerOne.jpg";
-import TrainerTwoBg from "../Image/trainerTwo.jpg";
-import TrainerThreeBg from "../Image/trainerThree.jpg";
+import OneBg from "../Image/first.jpg";
+import TwoBg from "../Image/trainerThree.jpg";
+import ThreeBg from "../Image/three.jpg";
 
 const MemberShip = () => (
   <section css={styles} className="trainers" id="MemberShip">
@@ -21,7 +20,7 @@ const MemberShip = () => (
         trainerType="General Trainer"
         access="Full Gym Access"
         complementary = 'Zumba and Yoga complementary' 
-        img={TrainerOneBg} 
+        img={OneBg} 
       />
       <MemberShipCard
         month="3 MONTH"
@@ -29,7 +28,7 @@ const MemberShip = () => (
         trainerType="General Trainer"
         access="Full Gym Access"
         complementary = 'Zumba and Yoga complementary' 
-        img={TrainerTwoBg} 
+        img={TwoBg} 
       />
       <MemberShipCard
           month="6 MONTH"
@@ -37,7 +36,7 @@ const MemberShip = () => (
           trainerType="General Trainer"
           access="Full Gym Access"
           complementary = 'Zumba and Yoga complementary' 
-          img={TrainerThreeBg} 
+          img={ThreeBg} 
       />
         {/* <MemberShipCard
             month="1 YEAR"

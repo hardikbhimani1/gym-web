@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
-import React from "react";
 import Container from "../GlobalComponents/Container";
 import Map from "./Map";
 import Form from "./Form";

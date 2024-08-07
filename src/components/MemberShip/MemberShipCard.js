@@ -48,13 +48,23 @@ const MemberShipCard = ({
         />
         <span>{access}</span>
       </div>
-      <div css={listElementStyles}>
-        <FaTimesCircle
-          css={iconStyles}
-          style={{ color: "red", fontSize: "20px" }}
-        />
-        <span>{complementary}</span>
-      </div>
+      {month === "6 MONTH" ? (
+        <div css={listElementStyles}>
+          <FaCheckCircle
+            css={iconStyles}
+            style={{ color: "green", fontSize: "20px" }}
+          />
+          <span>{complementary}</span>
+        </div>
+      ) : (
+        <div css={listElementStyles}>
+          <FaTimesCircle
+            css={iconStyles}
+            style={{ color: "red", fontSize: "20px" }}
+          />
+          <span>{complementary}</span>
+        </div>
+      )}
     </div>
     <button css={buttonStyles}>Buy Plan</button>
   </div>
@@ -84,12 +94,6 @@ const iconStyles = css`
   margin-right: 10px;
 `;
 
-const titleStyles = css`
-  color: #ed563b;
-  margin: 26px 0 9px 0;
-  font-weight: bold;
-  font-size: 14px;
-`;
 
 const listStyles = css`
   display: flex;
@@ -126,12 +130,6 @@ const buttonStyles = css`
   &:hover {
     background-color: #c8482d;
   }
-`;
-const priceContainerStyles = css`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 15px;
 `;
 
 export default MemberShipCard;
